@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="HomeParticlesSoftware.ComboBoxInterpolatorsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeParticlesSoftware"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="500">
+    <Grid Name="Grid" VerticalAlignment="Center" Background="#25265c" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Interpolators" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0"                                       
+               HorizontalAlignment="Left" Margin="20" VerticalAlignment="Center"/>
+
+        <ComboBox Name="ComboBox" Height="auto" HorizontalContentAlignment="Center" 
+                  VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="350"
+                  Grid.Column="1" Grid.ColumnSpan="3"  Grid.Row="0" SelectedIndex="0">
+            <ComboBoxItem Name="ColorInterpolator" Content="ColorInterpolator" Selected="ColorInterpolator_Selected"/>
+            <ComboBoxItem Name="HueInterpolator" Content="HueInterpolator" Selected="HueInterpolator_Selected"/>
+            <ComboBoxItem Name="OpacityInterpolator" Content="OpacityInterpolator" Selected="OpacityInterpolator_Selected"/>
+            <ComboBoxItem Name="RotationInterpolator" Content="RotationInterpolator" Selected="RotationInterpolator_Selected"/>
+            <ComboBoxItem Name="ScaleInterpolator" Content="ScaleInterpolator" Selected="ScaleInterpolator_Selected"/>
+        </ComboBox>
+    </Grid>
+</UserControl>

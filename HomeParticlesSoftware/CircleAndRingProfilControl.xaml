@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="HomeParticlesSoftware.CircleAndRingProfilControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeParticlesSoftware"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid Name="CircleAndRingProfil" Background="#25265c" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:SliderFloatControl x:Name="radius"                                    
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Grid.Column="0" Grid.Row="0" />
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
+            <Label Name="Label" Content="" HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
+            <ComboBox Name="circleRadiation" IsEnabled="True" Width="auto" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                  HorizontalContentAlignment="Center"                                
+                   SelectedIndex="1">
+                <ComboBoxItem Content="In"/>
+                <ComboBoxItem Content="None"/>
+                <ComboBoxItem Content="Out"/>
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="ColourSlider.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ColourSliderLibrary;assembly=ColourSliderLibrary"
+    Title="Colour Slider" Height="300" Width="300">
+    <Grid>
+        <local:ColourSlider Name="picker" Margin="16,22,16,0" Height="30" VerticalAlignment="Top" SelectedColour="Yellow">
+        </local:ColourSlider>
+        <Rectangle Height="55" Margin="80,75,76,0" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{Binding ElementName=picker, Path=SelectedColour}" />
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Window>

@@ -1,0 +1,108 @@
+ProfileUsed : MonoGame.Extended.Particles.Profiles.SprayProfile
+ProfileName : Spray
+Position : {X:330 Y:325}
+DefinitionsTextureRegion : 
+DefinitionsCapacity : 562
+LifeSpanFromMilliseconds : 1
+BoxFillWidth : 0
+BoxFillHeight : 0
+BoxWidth : 0
+BoxHeight : 0
+BoxUniformWidth : 0
+BoxUniformHeight : 0
+CircleRadius : 0
+CircleRadiate : 
+LineAxisX : 0
+LineAxisY : 0
+LineLength : 0
+PointIsPoint : False
+RingRadius : 0
+RingRadiate : 
+SprayDirectionX : 0.08988764
+SprayDirectionY : 0.04494382
+SpraySpread : 0
+ParametersColorMin : {R:0 G:166 B:255 A:255}
+ParametersMassMin : 0
+ParametersOpacityMin : 0
+ParametersQuantityMin : 0
+ParametersRotationMin : 0
+ParametersScaleMin : 0
+ParametersSpeedMin : 0
+ParametersMassMax : 0
+ParametersOpacityMax : 0
+ParametersQuantityMax : 393
+ParametersRotationMax : 0
+ParametersScaleMax : 3
+ParametersSpeedMax : 337.0786
+CircleContainerModifierInside : False
+CircleContainerModifierRadius : 0
+CircleContainerModifierRestitutionCoefficient : 0
+RectangleContainerModifierWidth : 0
+RectangleContainerModifierHeight : 0
+RectangleContainerModifierRestitutionCoefficient : 0
+RectangleLoopContainerModifierWidth : 0
+RectangleLoopContainerModifierHeight : 0
+ModifiersInterpolatorsSelectedName : HueInterpolator
+AgeModifierColorInterpolatorStartValue : {R:0 G:0 B:0 A:0}
+AgeModifierColorInterpolatorEndValue : {R:0 G:0 B:0 A:0}
+AgeModifierHueInterpolatorStartValue : 0
+AgeModifierHueInterpolatorEndValue : 0
+AgeModifierOpacityInterpolatorStartValue : 0
+AgeModifierOpacityInterpolatorEndValue : 0
+AgeModifierRotationInterpolatorStartValue : 0
+AgeModifierRotationInterpolatorEndValue : 0
+AgeModifierScaleInterpolatorStartValueX : 0
+AgeModifierScaleInterpolatorStartValueY : 0
+AgeModifierScaleInterpolatorEndValueX : 0
+AgeModifierScaleInterpolatorEndValueY : 0
+VelocityModifiersInterpolatorsSelectedName : HueInterpolator
+VelocityModifierColorInterpolatorStartValue : {R:0 G:0 B:0 A:0}
+VelocityModifierColorInterpolatorEndValue : {R:0 G:0 B:0 A:0}
+VelocityModifierHueInterpolatorStartValue : 0
+VelocityModifierHueInterpolatorEndValue : 853.9326
+VelocityModifierOpacityInterpolatorStartValue : 0
+VelocityModifierOpacityInterpolatorEndValue : 0
+VelocityModifierRotationInterpolatorStartValue : 0
+VelocityModifierRotationInterpolatorEndValue : 0
+VelocityModifierScaleInterpolatorStartValueX : 0
+VelocityModifierScaleInterpolatorStartValueY : 0
+VelocityModifierScaleInterpolatorEndValueX : 0
+VelocityModifierScaleInterpolatorEndValueY : 0
+DragModifierDragCoefficient : 0
+DragModifierDensity : 0
+IsLinearGravityModifierSelected : True
+LinearGravityModifierDirectionX : 0
+LinearGravityModifierDirectionY : 0
+LinearGravityModifierStrength : 0
+LinearGravityModifierControlSizeBuffer : 0
+LinearGravityModifierControlDuration : 0
+IsOpacityFastFadeModifierSelected : True
+OpacityFastFadeModifierControlSizeBuffer : 0
+OpacityFastFadeModifierControlDuration : 0
+IsRotationModifierRotationRate : True
+RotationModifierRotationRate : 0
+VelocityColorModifierVelocityColor : {R:255 G:0 B:0 A:255}
+VelocityColorModifierStationaryColor : {R:0 G:0 B:255 A:255}
+VelocityColorModifierVelocityThreshold : 8
+IsVelocityModifierInterpolatorSelected : True
+VelocityModifiersInterpolatorsSelectedName : HueInterpolator
+VelocityModifierColorInterpolatorStartValue : {R:0 G:0 B:0 A:0}
+VelocityModifierColorInterpolatorEndValue : {R:0 G:0 B:0 A:0}
+VelocityModifierHueInterpolatorStartValue : 0
+VelocityModifierHueInterpolatorEndValue : 853.9326
+VelocityModifierOpacityInterpolatorStartValue : 0
+VelocityModifierOpacityInterpolatorEndValue : 0
+VelocityModifierRotationInterpolatorStartValue : 0
+VelocityModifierRotationInterpolatorEndValue : 0
+VelocityModifierScaleInterpolatorStartValueX : 0
+VelocityModifierScaleInterpolatorStartValueY : 0
+VelocityModifierScaleInterpolatorEndValueX : 0
+VelocityModifierScaleInterpolatorEndValueY : 0
+VelocityModifierVelocityThreshold : 1
+VortexModifierMass : 112.3596
+VortexModifierMaxSpeed : 78.65169
+VortexModifierPositionX : 111.236
+VortexModifierPositionY : 109.7191
+TextBoxTextureRegionDefinitions : 
+TextBoxCapacityDefinitions : 0
+TextBoxLifeSpanDefinitions : 0

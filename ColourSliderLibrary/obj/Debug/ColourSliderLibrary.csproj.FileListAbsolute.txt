@@ -1,0 +1,14 @@
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\bin\Debug\ColourSliderLibrary.exe.config
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\bin\Debug\ColourSliderLibrary.exe
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\bin\Debug\ColourSliderLibrary.pdb
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\MainWindow.g.cs
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\App.g.cs
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary_MarkupCompile.cache
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary_MarkupCompile.lref
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\MainWindow.baml
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary.g.resources
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary.Properties.Resources.resources
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary.csproj.GenerateResource.Cache
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary.csproj.CoreCompileInputs.cache
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary.exe
+E:\GameDevelop\HomeParticlesSoftware\ColourSliderLibrary\obj\Debug\ColourSliderLibrary.pdb

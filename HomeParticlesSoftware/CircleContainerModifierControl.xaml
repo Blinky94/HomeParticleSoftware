@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="HomeParticlesSoftware.CircleContainerModifierControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeParticlesSoftware"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid Background="#25265c" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Name="Label" Content="Inside" Grid.Column="0" HorizontalAlignment="Right"
+               VerticalAlignment="Center"/>
+        <ComboBox Name="ComboBox" IsEnabled="True" Width="auto" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                  HorizontalContentAlignment="Center"                                
+                  Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" SelectedIndex="1">
+            <ComboBoxItem Name="TrueItem" Content="True"/>
+            <ComboBoxItem Name="FalseItem" Content="False"/>
+        </ComboBox>
+        <local:SliderFloatControl x:Name="Radius" Grid.Column="0" Background="Transparent" 
+                                  Grid.Row="2" HorizontalAlignment="Right"/>
+        <local:SliderFloatControl x:Name="RestitutionCoefficient" Grid.Column="1" Background="Transparent" 
+                                  Grid.Row="2" HorizontalAlignment="Left"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="HomeParticlesSoftware.MinMaxRGBColorControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomeParticlesSoftware"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="150">
+    <StackPanel Orientation="Horizontal" Grid.Column="0" Background="#25265c"                                   
+                HorizontalAlignment="Stretch" VerticalAlignment="Center">
+        
+        <Grid Background="DarkViolet" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <!--MainTitleBlock-->
+            <TextBlock
+                Name="MainTitleBLock"
+                Text="" FontStyle="Normal"                                     
+                FontWeight="Bold" Foreground="White"                                       
+                HorizontalAlignment="Center"                                           
+                VerticalAlignment="Center"                                       
+                TextAlignment="Center"                                       
+                Grid.Column="0" Grid.Row="0"
+                Grid.ColumnSpan="2"/>
+
+            <!--RectangleARGBColor-->
+            <Rectangle Name="RectangleRGBColor" 
+                Grid.Column="0" Grid.Row="1"                             
+                HorizontalAlignment="Stretch" Height="20"                                                                               
+                VerticalAlignment="Center"               
+                Stroke="White"                
+                StrokeThickness="1" Margin="5 0 5 5"/>
+
+            <!--SliderRColor-->
+            <Grid Grid.Column="0" Grid.Row="2" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Slider Name="SliderRColor"
+                    Maximum="255"
+                    Grid.Column="0"                                                                                                                                              
+                    Height="100" VerticalAlignment="Center"                                                     
+                    HorizontalAlignment="Center"                                                   
+                    Background="Red"
+                    TickFrequency="1"
+                    RenderTransformOrigin="0.5,0.5"
+                    IsDirectionReversed="True"
+                    Orientation="Vertical">
+                    <Slider.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="180"/>
+                        </TransformGroup>
+                    </Slider.RenderTransform>
+                </Slider>
+
+                <!--SliderGColor-->
+                <Slider Name="SliderGColor"                                                                                        
+                    Maximum="255"
+                    Grid.Column="1"                                                        
+                    Height="100" VerticalAlignment="Center"                                                     
+                    HorizontalAlignment="Center"                                                   
+                    Background="Green"
+                    TickFrequency="1"
+                    RenderTransformOrigin="0.5,0.5"
+                    IsDirectionReversed="True"
+                    Orientation="Vertical">
+                    <Slider.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="180"/>
+                        </TransformGroup>
+                    </Slider.RenderTransform>
+                </Slider>
+
+                <!--SliderBColor-->
+                <Slider Name="SliderBColor"                      
+                    Maximum="255"                                                         
+                    Grid.Column="2"                                                                
+                    Height="100" VerticalAlignment="Center"                                                     
+                    HorizontalAlignment="Center"                                                   
+                    Background="Blue"
+                    TickFrequency="1"
+                    RenderTransformOrigin="0.5,0.5"
+                    IsDirectionReversed="True"
+                    Orientation="Vertical">
+                    <Slider.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="180"/>
+                        </TransformGroup>
+                    </Slider.RenderTransform>
+                </Slider>
+            </Grid>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+                
+            </StackPanel>
+            <Grid Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox Name="TextBoxRColor"                                                                                                                     
+                    Text="{Binding ElementName=SliderRColor, Path=Value,                                                                                                                                        
+                    UpdateSourceTrigger=PropertyChanged, StringFormat=F0}"                                                                                            
+                    HorizontalAlignment="Center"                                                           
+                    VerticalAlignment="Top"                                                                                            
+                    FontSize="10"                                          
+                    VerticalContentAlignment="Center"
+                    TextAlignment="Center"                                                              
+                    TextChanged="TextBoxRColor_TextChanged"            
+                    Grid.Column="0"/>
+
+                <TextBox Name="TextBoxGColor"                                                                                                                       
+                    Text="{Binding ElementName=SliderGColor, Path=Value,                                                                                                                            
+                    UpdateSourceTrigger=PropertyChanged, StringFormat=F0}"                                           
+                    HorizontalAlignment="Center"                                                     
+                    VerticalAlignment="Top"                                                                        
+                    FontSize="10"                                          
+                    VerticalContentAlignment="Center"                                            
+                    TextAlignment="Center"                                                                                       
+                    TextChanged="TextBoxGColor_TextChanged" 
+                    IsReadOnly="True"
+                    Grid.Column="1"/>
+
+                <TextBox Name="TextBoxBColor"                                                 
+                    Text="{Binding ElementName=SliderBColor, Path=Value,                                                                                                                           
+                    UpdateSourceTrigger=PropertyChanged, StringFormat=F0}"                                           
+                    HorizontalAlignment="Center"                                                           
+                    VerticalAlignment="Top"                                                                        
+                    FontSize="10"                                          
+                    VerticalContentAlignment="Center"
+                    TextAlignment="Center"   
+                    TextChanged="TextBoxBColor_TextChanged" 
+                    IsReadOnly="True"
+                    Grid.Column="2"/>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</UserControl>
